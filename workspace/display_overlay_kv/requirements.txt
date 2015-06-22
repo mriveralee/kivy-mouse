@@ -1,0 +1,5 @@
+pillow==2.7
+numpy==*
+enum34==*
+kivy==*
+abc=*

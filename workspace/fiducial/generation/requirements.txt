@@ -1,0 +1,2 @@
+qrcode==5.1
+pillow==2.7

@@ -1,0 +1,6 @@
+Playground for testing fiducial generation
+
+* Directions: 
+  1) Run: pip install -r requirements.txt
+  2) Run: python qrgen.py <single_string_to_encode>
+  3) Output file is saved in output/ folder

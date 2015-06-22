@@ -1,0 +1,7 @@
+Playground for testing display overlay
+
+* Directions:
+  1) Run: brew tap homebrew/science
+  2) Run: brew install opencv
+  3) Run: pip install -r requirements.txt
+  4) Run: python displayOverlay.py

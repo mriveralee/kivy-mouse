@@ -1,0 +1,36 @@
+#:kivy 1.0
+#:import kivy kivy
+
+<DisplayOverlay>:
+    canvas:
+        Color:
+            rgb: 0, 0, 0
+        Rectangle:
+            source: './img/sample01.jpg'
+            size: self.size
+        Color:
+            rgb: 100, 100, 100
+        Ellipse:
+            pos: self.width / 2, self.height / 2
+            size: 200, 200  # X, Y Radius
+
+    BoxLayout:
+        id: logo-title-container
+        padding: '10dp'
+        spacing: '10dp'
+        size_hint: 1, None
+        pos_hint: {'top': 1}
+        height: '44dp'
+        Image:
+            id: logo
+            size_hint: None, None
+            size: '24dp', '24dp'
+            source: 'data/logo/kivy-icon-64.png'
+			mipmap: True
+        Label:
+            id: title
+            height: '24dp'
+            text_size: self.width, None
+            color: (1, 1, 1, .8)
+            text: 'Kivy %s - DisplayOverlay' % kivy.__version__
+            valign: 'middle'
